@@ -1,0 +1,234 @@
+.wave {
+    position: absolute;
+    height: 53px;
+    width: 100%;
+    background: #1f2032;
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #0d0e20;
+    right: 0%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #1f2032;
+    left: -1.5%;
+    top: 40%;
+  }
+
+/* ===============================navbar================ */
+.navbar, .dropdown-menu {
+    /* background-image: linear-gradient(to bottom, #060941, #21185f, #3e277d, #5c359c, #7c44bc); */
+    background-image: linear-gradient(to right bottom, #060941, #21185f, #3e277d, #5c359c, #7c44bc);
+    z-index: 10000;
+
+}
+.navbar{
+    box-shadow: 20px 0px 40px 30px #7C44BC;
+}
+.dropdown-item:hover{
+    background-color: #060941 !important;
+}
+.navbar-toggler-icon {
+    filter: invert();
+    
+}
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) white !important;
+}
+/* =========================color pallete==================== */
+.melon-bg{
+    background-color: #b2e7ef !important;
+}
+
+.melon-text{
+    color: #b2e7ef !important;
+}
+/* =========================landing================================== */
+.landing{
+    height: 92vh;
+    background-image: url("../assets/Landing.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+.landing:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.586);
+    z-index: 3;
+}
+.landing div{
+    position: absolute;
+    top: 30%;
+    left:50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+}
+.landing div .btn{
+    background-color: #060941 !important;
+    border-color: #060941 !important;
+}
+/* =========================landing end================================== */
+
+/* =========================slider start================================== */
+.slider{
+    background-color: #1f2032;
+    padding-top: 40px;
+    padding-bottom: 100px !important;
+}
+.slider > :first-child{
+    color: white;
+    filter: drop-shadow(0px 0px 10px  #f602c6);
+}
+.slider #carouselExample{
+    height: 100vh;
+    width: 90%;
+    box-shadow: 20px 0px 40px 20px #7C44BC,0px 20px 40px 20px #7C44BC;
+    z-index: 10;
+}
+.slider #carouselExample *{
+    border-radius: 30px;
+}   
+.slider img{
+    z-index: -1;
+    height: 100vh;
+}
+.slider .carousel-item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.586);
+    z-index: 1;
+}
+
+.carousel-item div{
+    z-index: 1;
+    right: -1%;
+    top: 15%;
+    transform: translate(-20%,15%);
+    height: fit-content;
+    
+}
+
+/* =========================slider end================================== */
+
+/* =========================Animes start================================== */
+.Animes{
+    background-color: #0d0e20;
+}
+.Animes h2{
+    filter: drop-shadow(0px 0px 10px  #f602c6);
+    z-index: 10;
+}
+
+.Animes .card{
+    border-color: #96ccfa;
+    box-shadow: 5px 5px 20px  #96ccfa,-5px  5px 20px  #96ccfa;
+    border-radius: 7px;
+
+}
+.Animes .card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    size: cover;
+}
+.Animes .card::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.744);
+    z-index: 1;
+    border-radius: 7px;
+    transition: 0.6s;
+}
+.Animes .card:hover::before{
+    height: 100%;
+}
+.Animes .card > .card-title{
+    position: absolute;
+    bottom: 2%;
+    left:6%;
+    z-index: 1000;
+    color: #b2e7ef;
+    opacity: 0;
+    transition: 0.6s;
+}
+.Animes .card:hover > .card-title{
+    opacity: 1;
+    filter: drop-shadow(0px 0px 10px  #f602c6);
+}
+
+.Animes .card .card-body h5{
+    filter: drop-shadow(0px 0px 5px  #f602c6);
+}
+.Animes .card .card-body .btn{
+    background-color:  #7547e8;
+    border-color: #7547e8;
+    
+}
+
+
+/* Animes card body */
+.Animes .card .card-body{
+    background-color:  #2d1b7f;
+    color: #c8b3f6;
+    left:107%;
+    top:50%;
+    width: 100%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.6s;
+    z-index: -1000;
+}
+
+.Animes .card .card-body::before{
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-right: 10px solid #2d1b7f;
+    top:50%;
+    
+    right: 100%;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: -1000;
+    transition: 0.6s;
+}
+
+.Animes .card:hover .card-body{
+    opacity: 1;
+    z-index: 1000;
+}
+.Animes .card:hover .card-body::before{
+    opacity: 1;
+    z-index: 1000;
+}
+
+.Animes .card:last-child .card-body{
+    left: -107%;
+    
+}
+.Animes .card:last-child .card-body::before{
+    left: 100%;
+    border: 10px solid transparent;
+    border-left: 10px solid #2d1b7f;
+}
+/* =========================Animes end================================== */
