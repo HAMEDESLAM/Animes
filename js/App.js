@@ -9,12 +9,12 @@ window.onscroll = function() {
     if(window.scrollY >= landingHeight){
         totop.style.opacity = "1";
         totop.style.zIndex = "100000000";
-        totop.style.position = "static";
+        totop.style.position = "static !important";
     }
     else{
         totop.style.opacity = "0";
         totop.style.zIndex = "-1";
-        totop.style.position = "absolute";
+        totop.style.position = "absolute !important";
     }
 };
 
