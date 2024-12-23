@@ -4,6 +4,19 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 // TO TOP BUTTON
 let totop = document.getElementById("totop")
+window.onload = function() {
+    const landingHeight = document.querySelector('.landing').offsetHeight;
+    if(window.scrollY >= landingHeight){
+        totop.style.opacity = "1";
+        totop.style.zIndex = "100000000";
+        totop.style.position = "static !important";
+    }
+    else{
+        totop.style.opacity = "0";
+        totop.style.zIndex = "-1";
+        totop.style.position = "absolute !important";
+    }
+}
 window.onscroll = function() {
     const landingHeight = document.querySelector('.landing').offsetHeight;
     if(window.scrollY >= landingHeight){
