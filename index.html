@@ -1,197 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <title>X Anime</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Nvabar start-->
-    <nav class="navbar navbar-expand-lg text-light " id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand text-light fw-bold" href="#">X Anime</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active melon-text" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link melon-text" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle melon-text" href="#" role="button" data-bs-toggle="dropdown" >Nav</a>
-                    <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item melon-text" href="#">Most popular</a></li>
-                    <li><a class="dropdown-item melon-text" href="#">beloved</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item melon-text" href="#">New Anime</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg py-3 text-light" id="navbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand text-light fw-bold fs-3" href="#">X Anime</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active melon-text fs-5"
+                aria-current="page"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link melon-text fs-5" href="login.html">Login</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle melon-text fs-5"
+                href="#"  
+                role="button"
+                data-bs-toggle="dropdown"
+                >Nav</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item melon-text" href="#slider">News</a>
                 </li>
-            </ul>
-          </div>
+                <li>
+                  <a class="dropdown-item melon-text" href="#Animes">Animes</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!--Nvabar END-->
 
-    <!--Welcoming start-->
-    <section class="landing position-relative d-flex justify-content-center align-items-start">
-        <div class="position-absolute  d-flex flex-column justify-content-center align-items-center mt-5">
-            <h1 class="fw-bold text-light">X Anime</h1>
-            <p class="text-light text-center">we wish you a good journy to japan and anime world</p>
-            <a class="btn btn-danger" href="#Animes">
-                Explore
-            </a>
+    <!--Quick start-->
+    <div class="quick position-fixed d-flex flex-column">
+      <a class="text-light sidebar-btn fs-5 rounded-5 d-flex justify-content-center align-items-center mb-4 text-decoration-none"  href="#navbar">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <a class="text-light sidebar-btn fs-5 rounded-5 d-flex justify-content-center align-items-center text-decoration-none" data-bs-toggle="offcanvas" href="#Sidebar" role="button" aria-controls="#Sidebar">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+    <div
+      class="offcanvas offcanvas-start"
+      id="Sidebar"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5
+          class="offcanvas-title fs-2 text-light fw-bold"
+          id="offcanvasExampleLabel"
+        >
+          X Anime
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="collapse-ex">
+          <button
+            class="btn mb-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            About us
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body mb-3">
+              Some placeholder content for the collapse component. This panel is
+              hidden by default but revealed when the user activates the
+              relevant trigger.
+            </div>
+          </div>
         </div>
+        <h3 class="text-light fw-medium">Geners</h3>
+        <ul class="navbar-nav d-flex flex-column">
+          <li>
+            <a href="" class="nav-link melon-text fs-5 ms-3">Action</a>
+          </li>
+          <li>
+            <a href="" class="nav-link melon-text fs-5 ms-3">Adventure</a>
+          </li>
+          <li>
+            <a href="" class="nav-link melon-text fs-5 ms-3">Isekai</a>
+          </li>
+          <li>
+            <a href="" class="nav-link melon-text fs-5 ms-3">Horror</a>
+          </li>
+          <li class="mb-3">
+            <a href="" class="nav-link melon-text fs-5 ms-3">Fantsy</a>
+          </li>
+          <div class="Loading d-flex align-items-center">
+            <span class="spinner-border text-light me-2" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </span>
+            <span class="text-light">Loading...</span>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!--Quick end-->
+
+    <!--Welcoming start-->
+    <section
+      class="landing position-relative d-flex justify-content-center align-items-start"
+    >
+      <div
+        class="position-absolute d-flex flex-column justify-content-center align-items-center mt-5"
+      >
+        <h1 class="fw-bold text-light">X Anime</h1>
+        <p class="text-light text-center">
+          we wish you a good journy to japan and anime world
+        </p>
+        <a class="btn btn-danger" href="#Animes"> Explore </a>
+      </div>
     </section>
     <!--Welcoming ENDS-->
 
     <!--SLIDER START-->
-    <section class="slider position-relative " >
-        <h2 class="text-center mb-5 fw-bold">News</h2>
-        <div id="carouselExample" class="carousel slide mx-auto rounded-5">
-            <div class="carousel-inner">
-                
-                <div class="carousel-item active position-relative ">
-                    <div class="position-absolute  d-flex flex-column align-items-start mt-5">
-                        <h3 class="fw-bold text-light fs-1" style="height: fit-content;">One Piece</h3>
-                        <p class="text-light fs-4">luffy has gone too far and he is planning on defeating <br> kaido  could he do it let's see with the future king of pirates</p>
-                    </div>
-                    <img src="assets/Slide1.jpg" class="d-block w-100" alt="...">
-                </div>
-                
-                <div class="carousel-item position-relative">
-                    <div class="position-absolute  d-flex flex-column align-items-start mt-5">
-                        <h3 class="fw-bold text-light fs-1" style="height: fit-content;">bleach</h3>
-                        <p class="text-light fs-4">Looks like the 1000 year bloody war is on the door<br> its a good luck for all so choose your team before it <br> I will consider isen</p>
-                    </div>
-                    <img src="assets/Slide2.jpg" class="d-block w-100" alt="...">
-                </div>
-                
-                <div class="carousel-item position-relative ">
-                    <div class="position-absolute  d-flex flex-column align-items-start mt-5">
-                        <h3 class="fw-bold text-light fs-1" style="height: fit-content;">Tokyo Ghoul</h3>
-                        <p class="text-light fs-4">Humans are being eating by other humans <br> or we could call them Ghoul it's only a matter of time <br> untill reather humans win or ghouls <br> we are just eating humans as humans eats cows</p>
-                    </div>
-                    <img src="assets/Slide3.jpg" class="d-block w-100" alt="...">
-                </div>
+    <section class="slider position-relative" id="slider">
+      <h2 class="text-center text-light fs-1 fw-bold">News</h2>
+      <div id="carouselExample" class="carousel slide mx-auto rounded-5">
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <div
+              class="position-absolute d-flex flex-column align-items-start mt-5"
+            >
+              <h3 class="fw-bold text-light fs-1" >
+                One Piece
+              </h3>
+              <p class="text-light fs-4">
+                luffy has gone too far and he is planning on defeating <br />
+                kaido could he do it let's see with the future king of pirates
+              </p>
             </div>
+            <img src="assets/Slide1.jpg" class="d-block w-100" alt="..." />
+          </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          <div class="carousel-item position-relative">
+            <div
+              class="position-absolute d-flex flex-column align-items-start mt-5"
+            >
+              <h3 class="fw-bold text-light fs-1" >
+                bleach
+              </h3>
+              <p class="text-light fs-4">
+                Looks like the 1000 year bloody war is on the door<br />
+                its a good luck for all so choose your team before it <br />
+                I will consider isen
+              </p>
+            </div>
+            <img src="assets/Slide2.jpg" class="d-block w-100" alt="..." />
+          </div>
+
+          <div class="carousel-item position-relative">
+            <div
+              class="position-absolute d-flex flex-column align-items-start mt-5"
+            >
+              <h3 class="fw-bold text-light fs-1" >
+                Solo Leveling
+              </h3>
+              <p class="text-light fs-4">
+                Humans are being eating by other humans <br />
+                or we could call them Ghoul it's only a matter of time <br />
+                untill reather humans win or ghouls <br />
+                we are just eating humans as humans eats cows
+              </p>
+            </div>
+            <img src="assets/Slide3.jpg" class="d-block w-100" alt="..." />
+          </div>
         </div>
-        <div class="wave">hi</div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     <!--SLIDER end-->
-    
+
     <!--Animes START-->
-    <section class="Animes py-5" id="Animes">
-        <div class="container d-flex flex-column">
-            <h2 class="text-light text-center mb-5 fw-bold">New Animes</h2>
-            <div class="d-flex justify-content-between align-items-center mb-5">
-                <div class="card col-3 position-relative">
-                    <img src="assets/Card1.jpg" class="card-img-top " alt="...">
-                    <h5 class="card-title fw-bold">One Piece</h5>
-                    <div class="card-body position-absolute  rounded-4">
-                        <h5 class="card-title">One Pieace</h5>
-                        <p class="card-text">
-                            Gold Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world.
-                        </p>
-                        <a href="#navbar" class="btn btn-primary">Know More</a>
-                    </div>                
-                </div>
-
-                <div class="card col-3" > 
-                    <img src="assets/Card2.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-title fw-bold">Naruto </h5>
-                    <div class="card-body position-absolute  rounded-4">
-                        <h5 class="card-title">Naruto </h5>
-                        <p class="card-text">
-                            A routine rank-C mission turned into a full-blown battle as the Hidden Fall village is attacked by enemy ninjas. Now Naruto,
-                            Sasuke and Sakura must help the leader of the Hidden Fall, Shibuki, protect his village and show him what being a hero is all about.
-                        </p>
-                        <a href="#navbar" class="btn btn-primary">Know More</a>
-                    </div>
-                </div>
-                <div class="card col-3">
-                    <img src="assets/Card4.jpg" class="card-img-top rounded-4" alt="...">
-                    <h5 class="card-title fw-bold">Jujutsu Kaisen</h5>
-                    <div class="card-body position-absolute  rounded-4">
-                        <h5 class="card-title">Jujutsu Kaisen</h5>
-                        <p class="card-text">
-                            The year is 2006, and the halls of Tokyo Prefectural Jujutsu High School echo with the endless bickering and intense debate between two inseparable best friends. Exuding unshakeable confidence, Satoru Gojou and Suguru Getou believe there is no challenge too great
-                        </p>
-                        <a href="#navbar" class="btn btn-primary">Know More</a>
-                    </div>
-                </div>
+    <section class="Animes position-relative" id="Animes">
+      <div class="container d-flex flex-column">
+        <h2 class="text-light text-center fw-bold">New Animes</h2>
+        <div class="d-flex justify-content-between align-items-center mb-5">
+          <div class="card col-3 position-relative">
+            <img src="assets/Card1.jpg" class="card-img-top" alt="..." />
+            <h5 class="card-title fw-bold position-absolute">One Piece</h5>
+            <div class="card-body position-absolute rounded-4">
+              <h5 class="card-title">One Pieace</h5>
+              <p class="card-text">
+                Gold Roger was known as the "Pirate King," the strongest and
+                most infamous being to have sailed the Grand Line.
+              </p>
+              <a href="#navbar" class="btn btn-primary">Know More</a>
+              <div class="badge badge-dark position-absolute">
+                <img src="assets/Card1.jpg" class="card-img-top" alt="..." />
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="card col-3" >
-                    <img src="assets/Card3.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-title fw-bold">Tomodachi Game</h5>
-                    <div class="card-body position-absolute  rounded-4">
-                        <h5 class="card-title fw-bold">Tomodachi Game</h5>
-                        <p class="card-text">
-                            Yuuichi Katagiri has battled financial hardships his whole life but has learned to stay content and positive thanks to his close circle of friends. To keep a promise he made to them, Yuuichi saves up enough money to join them on the school trip. But when the
-                        </p>
-                        <a href="#navbar" class="btn btn-primary">Knew More</a>
-                    </div>
-                </div>
+          </div>
 
-                <div class="card col-3">
-                    <img src="assets/Card5.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-title fw-bold">Bleach: Thousand-Year Blood War Arc</h5>
-                    <div class="card-body position-absolute rounded-4">
-                        <h5 class="card-title fw-bold">Bleach: Thousand-Year Blood War Arc</h5>
-                        <p class="card-text">
-                            Substitute Soul Reaper Ichigo Kurosaki spends his days fighting against Hollows, dangerous evil spirits that threaten Karakura Town. Ichigo carries out his quest with his closest allies: Orihime Inoue, his childhood friend with a talent for healing
-                        </p>
-                        <a href="#navbar" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                
-                <div class="card col-3" style="height: 100%; background-color: #868e96;" >
-                    <img src="assets/Card5.jpg"class="w-100 h-100" style="filter: opacity(0);" alt="">
-                        <h5 class="card-title placeholder-glow w-100">
-                            <span class="placeholder col-6"></span>
-                        </h5>
-                    <div class="card-body position-absolute  rounded-4">
-                        <h5 class="card-title placeholder-glow">
-                            <span class="placeholder col-6"></span>
-                        </h5>
-                        <p class="card-text placeholder-glow">
-                            <span class="placeholder col-7"></span>
-                            <span class="placeholder col-4"></span>
-                            <span class="placeholder col-4"></span>
-                            <span class="placeholder col-6"></span>
-                            <span class="placeholder col-8"></span>
-                        </p>
-                        <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-                    </div>
-                </div>
-  
+          <div class="card col-3">
+            <img src="assets/Card2.jpg" class="card-img-top" alt="..." />
+            <h5 class="card-title fw-bold position-absolute">Naruto</h5>
+            <div class="card-body position-absolute rounded-4">
+              <h5 class="card-title ">Naruto</h5>
+              <p class="card-text">
+                A routine rank-C mission turned into a full-blown battle as the
+                Hidden Fall village is attacked by enemy ninjas.
+              </p>
+              <a href="#navbar" class="btn btn-primary">Know More</a>
+              <div class="badge badge-dark position-absolute">
+                <img src="assets/Card2.jpg" class="card-img-top" alt="..." />
+              </div>
             </div>
+          </div>
+
+          <div class="card col-3">
+            <img
+              src="assets/Card4.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <h5 class="card-title fw-bold position-absolute">Jujutsu Kaisen</h5>
+            <div class="card-body position-absolute  rounded-4">
+              <h5 class="card-title ">
+                Jujutsu Kaisen
+              </h5>
+              <p class="card-text">
+                The year is 2006, and the halls of Tokyo Prefectural Jujutsu
+                High School echo
+              </p>
+              <a href="#navbar" class="btn btn-primary">Know More</a>
+              <div class="badge badge-dark position-absolute">
+                <img src="assets/Card4.jpg" class="card-img-top" alt="..." />
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-5">
+          <div class="card col-3">
+            <img src="assets/Card3.jpg" class="card-img-top" alt="..." />
+            <h5 class="card-title fw-bold position-absolute">Tomodachi Game</h5>
+            <div class="card-body position-absolute rounded-4">
+              <h5 class="card-title fw-bold">Tomodachi Game</h5>
+              <p class="card-text">
+                Yuuichi Katagiri has battled financial hardships his whole life
+                but has learned to stay content and positive.
+              </p>
+              <a href="#navbar" class="btn btn-primary">Knew More</a>
+              <div class="badge badge-dark position-absolute">
+                <img src="assets/Card3.jpg" class="card-img-top" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-3">
+            <img src="assets/Card5.jpg" class="card-img-top" alt="..." />
+            <h5 class="card-title fw-bold position-absolute">
+              Bleach: Thousand-Year Blood War Arc
+            </h5>
+            <div class="card-body position-absolute rounded-4">
+              <h5 class="card-title fw-bold">
+                Bleach: Thousand-Year Blood War Arc
+              </h5>
+              <p class="card-text">
+                Substitute Soul Reaper Ichigo Kurosaki spends his days fighting
+                against Hollows, dangerous evil spirits that threaten Karakura
+                Town.
+              </p>
+              <a href="#navbar" class="btn btn-primary">Go somewhere</a>
+              <div class="badge badge-dark position-absolute">
+                <img src="assets/Card5.jpg" class="card-img-top" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-3 ph"
+          >
+            <img
+              src="assets/Card5.jpg"
+              class="w-100 h-100"
+              alt=""
+            />
+            <h5 class="card-title placeholder-glow w-100 position-absolute">
+              <span class="placeholder col-6"></span>
+            </h5>
+            <div class="card-body position-absolute rounded-4">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a
+                class="btn btn-primary disabled placeholder col-6"
+                aria-disabled="true"
+              ></a>
+              <div class="badge badge-dark position-absolute placeholder-glow">
+                <span class="placeholder w-100 h-100 rounded-3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!--Animes ENDS-->
 
+    <!--Animes START-->
+    <section class="contact pt-1 pb-5 position-relative" id="contact">
+      <h2 class="text-center fw-bold">Contact Us</h2>
+      <div class="container">
+        <form action="message.html" class="w-50 mx-auto rounded-4 p-4">
+          <div class="input-group position-relative mb-4 mt-4 mx-auto">
+            <input type="text" id="Name" required class="input" />
+            <label for="Name" class="position-absolute">Name</label>
+          </div>
+          <div class="input-group position-relative mb-4 mx-auto">
+            <input type="email" id="Email" required class="input" />
+            <label for="Email" class="position-absolute">Email</label>
+          </div>
+          <div class="input-group position-relative mb-4 mx-auto">
+            <textarea name="" id="message" class="input" required> </textarea>
+            <label for="message" class="position-absolute">message</label>
+          </div>
+          <div class="d-flex justify-content-center mb-4">
+            <button
+              type="submit"
+              class="btn btn-outline-danger mx-auto fw-bold"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--Animes ENDS-->
 
-    <script  src="js/all.min.js"></script>
-    <script  src="js/bootstrap.bundle.min.js"></script>
-    <script  src="js/bootstrap.bundle.min.js.map"></script>
-</body>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+  </body>
 </html>
