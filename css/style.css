@@ -1,6 +1,9 @@
 :root{
     --main-color:#0494fafc;
 }
+body{
+    font-family: "Roboto", serif;
+}
 /* ===============================navbar================ */
 .navbar, .dropdown-menu {
     /* background-image: linear-gradient(to bottom, #060941, #21185f, #3e277d, #5c359c, #7c44bc); */
