@@ -43,6 +43,7 @@ li:hover .dropdown-item:hover{
     width: 35px;
     height: 35px;
     box-shadow: 0px 0px 120px 5px white;
+    transition: 0.5s;
 }
 /* =========================Sidebar==================== */
 #Sidebar{
@@ -97,7 +98,6 @@ li:hover .dropdown-item:hover{
     z-index: 3;
 }
 .landing div{
-    position: absolute;
     top: 30%;
     left:50%;
     z-index: 10;
@@ -105,7 +105,7 @@ li:hover .dropdown-item:hover{
 
 }
 .landing .Thanks{
-    position: absolute;
+    
     top: 40%;
     left:50%;
     z-index: 10;
@@ -492,4 +492,25 @@ li:hover .dropdown-item:hover{
     width: 80%;
     background-color: #7140a9 !important;
     border-color: #7140a9 !important;
+}
+.input-group .pop{
+    background-color: transparent;
+    color: #51237c;
+    top: 10px;
+    right: 10px;
+    border: none;
+}
+.popover-header{
+    background-color: #2d1b7f !important;
+    color: white !important;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.popover-body{
+    background-color: #3820a3 !important;
+    color: white !important;
+    font-weight: bold;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
