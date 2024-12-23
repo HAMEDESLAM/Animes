@@ -1,6 +1,8 @@
+// BOOTSTRAP
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
+// TO TOP BUTTON
 let totop = document.getElementById("totop")
 window.onscroll = function() {
     const landingHeight = document.querySelector('.landing').offsetHeight;
@@ -16,6 +18,7 @@ window.onscroll = function() {
     }
 };
 
+// SLIDER
 let btn = document.getElementsByClassName("carousel-control-next")[0];
 let handle = setInterval(() => {
     btn.click();  
