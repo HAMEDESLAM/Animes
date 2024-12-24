@@ -135,9 +135,7 @@
             <a href="" class="nav-link melon-text fs-5 ms-3">Fantsy</a>
           </li>
           <div class="Loading d-flex align-items-center">
-            <span class="spinner-border text-light me-2" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </span>
+            <span class="spinner-border text-light me-2" role="status"></span>
             <span class="text-light">Loading...</span>
           </div>
         </ul>
@@ -370,29 +368,30 @@
     </section>
     <!--Animes ENDS-->
 
-    <!--Animes START-->
-    <section class="contact pt-1 pb-5 position-relative" id="contact">
-      <h2 class="text-center fw-bold">Contact Us</h2>
+    <!--Contact START-->
+    <section class="contact pt-1  position-relative" id="contact">
+      <h2 class="text-center fw-bold text-light">Contact Us</h2>
       <div class="container">
         <form action="message.html" class="w-50 mx-auto rounded-4 p-4">
           <div class="input-group position-relative mb-4 mt-4 mx-auto">
-            <input type="text" id="Name" required class="input" />
-            <label for="Name" class="position-absolute">Name</label>
+            <input type="text" id="Name" required class="input text-light" />
+            <label for="Name" class="position-absolute text-light">Name</label>
             <button type="button" class="pop position-absolute" data-bs-toggle="popover" data-bs-title="write your name" data-bs-content="Write your beutiful name pls">
               <i class="fa-solid fa-circle-info"></i>
             </button>
           </div>
 
           <div class="input-group position-relative mb-4 mx-auto">
-            <input type="email" id="Email" required class="input" />
-            <label for="Email" class="position-absolute">Email</label>
+            <input type="email" id="Email" required class="input text-light" />
+            <label for="Email" class="position-absolute text-light">Email</label>
             <button type="button" class="pop position-absolute" data-bs-toggle="popover" data-bs-title="write your Email" data-bs-content="Write your beutiful Email pls">
               <i class="fa-solid fa-circle-info"></i>
             </button>
           </div>
+
           <div class="input-group position-relative mb-4 mx-auto">
-            <textarea name="" id="message" class="input" required></textarea>
-            <label for="message" class="position-absolute">message</label>
+            <textarea name="" id="message" class="input text-light" required></textarea>
+            <label for="message" class="position-absolute text-light">message</label>
             <button type="button" class="pop position-absolute" data-bs-toggle="popover" data-bs-title="write your Email" data-bs-content="Write your beutiful Email pls">
               <i class="fa-solid fa-circle-info"></i>
             </button>
@@ -408,7 +407,59 @@
         </form>
       </div>
     </section>
-    <!--Animes ENDS-->
+    <!--Contact ENDS-->
+
+    <!--Footer STARTS-->
+    <section class="footer py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+            <div class="col-6">
+              <h2 class="text-light fw-bold mb-3">X Anime</h2>
+              <div class="Social d-flex">
+                <a href="" class="text-light py-2 text-decoration-none d-block text-center">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-light py-2 text-decoration-none d-block text-center ms-2">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="text-light py-2 text-decoration-none d-block text-center ms-2">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <p class="text-light mt-3 mb-5">
+                Your gateway to the world of anime – Stream, Discover, and Explore.
+                Stay tuned for the latest updates and exclusive content!
+              </p>
+            </div>
+            <div class="col-4">
+              <button class="btn text-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#Alogin" >
+                Anonymous Feedback
+              </button>                    
+              <div class="Alogin" id="Alogin">
+                <form action="">
+                  <div class="input-group position-relative mb-4 mx-auto">
+                    <textarea name="" id="message" class="input  text-light" required></textarea>
+                    <label for="message" class="position-absolute text-light">message</label>
+                    <button type="button" class="pop position-absolute" data-bs-toggle="popover" data-bs-title="write your Email" data-bs-content="Write your beutiful Email pls">
+                      <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                  </div>
+                  <div class="d-flex justify-content-center mb-4">
+                    <button
+                      type="submit"
+                      class="btn btn-outline-danger mx-auto fw-bold w-100"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+    <!--Footer ENDS-->
 
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
