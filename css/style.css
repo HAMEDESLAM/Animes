@@ -54,6 +54,7 @@ li:hover .dropdown-item:hover{
 #Sidebar{
     z-index: 1000000 !important;
     background-image: linear-gradient(to bottom, #1f0749, #2f0b6b, #3b0d84, #5b13c6, #6613dd);
+    /* background-color: #3c058f; */
     border-width: 0 !important;
 }
 #Sidebar .collapse .card{
