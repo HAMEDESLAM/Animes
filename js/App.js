@@ -32,7 +32,7 @@ window.onscroll = function() {
 };
 
 // SLIDER
-let btn = document.getElementsByClassName("carousel-control-next")[0];
-let handle = setInterval(() => {
-    btn.click();  
-},15000)
+// let btn = document.getElementsByClassName("carousel-control-next")[0];
+// let handle = setInterval(() => {
+//     btn.click();  
+// },15000)
